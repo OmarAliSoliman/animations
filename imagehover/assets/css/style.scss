@@ -224,14 +224,20 @@ body {
   }
   .distortion{
     margin-top: 20px;
-    position: unset;
-    margin: auto;
+    // position: unset;
+    // margin: auto;
+    right: unset;
+    left: 50%;
+    transform: translate(-50%, 0);
     max-width: 100%;
   }
 }
 
 
 @media(max-width: 524px){
+  .content{
+    height: auto;
+  }
   html{
     font-size: 12px;
   }
