@@ -20,7 +20,7 @@ $(document).ready(function () {
   gsap
     .timeline()
     .to(".overlay", {
-      top: "-100%",
+      top: "-100vh",
       ease: Expo.easeInOut,
       zIndex: "-1",
       stagger: .2

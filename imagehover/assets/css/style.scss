@@ -224,7 +224,7 @@ body {
   }
   .distortion{
     margin-top: 20px;
-    // position: unset;
+    position: absolute;
     // margin: auto;
     right: unset;
     left: 50%;
@@ -237,6 +237,7 @@ body {
 @media(max-width: 524px){
   .content{
     height: auto;
+    margin-top: 50px;
   }
   html{
     font-size: 12px;
@@ -260,7 +261,10 @@ body {
   }
   .sponser{
     bottom: unset;
-    top: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    right: unset;
   }
   .content h1, .content h3{
     font-size: 6rem;
