@@ -295,5 +295,16 @@ body {
   .content h1, .content h3 {
     font-size: 6rem;
   }
+  .distortion {
+    height: 480px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 361px) {
+  .content {
+    height: auto;
+    margin-bottom: 50px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
