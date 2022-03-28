@@ -230,6 +230,8 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     max-width: 100%;
+    z-index: -1;
+    opacity: .8;
   }
 }
 
