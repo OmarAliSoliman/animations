@@ -1,0 +1,127 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins";
+  background: #d8dbe2;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: #66c6d0;
+}
+
+.container {
+  height: 390px;
+  width: 260px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.container .black .left {
+  background-color: #4d4d4d;
+}
+
+.container .black .right {
+  background-color: #343434;
+}
+
+.container .black .top {
+  background-color: #696969;
+}
+
+.container .white .left {
+  background-color: #e6e6e6;
+}
+
+.container .white .right {
+  background-color: #cbcbcb;
+}
+
+.container .white .top {
+  background-color: #ffffff;
+}
+
+.container .left {
+  height: 150px;
+  width: 40px;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(90deg) skew(-30deg) scaleY(0.864);
+          transform: rotate(90deg) skew(-30deg) scaleY(0.864);
+}
+
+.container .right {
+  height: 40px;
+  width: 150px;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  position: relative;
+  bottom: 150px;
+  -webkit-transform: rotate(-30deg) skew(-30deg) scaleY(0.864);
+          transform: rotate(-30deg) skew(-30deg) scaleY(0.864);
+}
+
+.container .top {
+  width: 150px;
+  height: 150px;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(210deg) skew(-30deg) scaleY(0.864);
+          transform: rotate(210deg) skew(-30deg) scaleY(0.864);
+  position: relative;
+  bottom: 190px;
+}
+
+.container .stack1, .container .stack2, .container .stack3, .container .stack4, .container .stack5, .container .stack6 {
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.container .stack1 {
+  top: 150px;
+}
+
+.container .stack2 {
+  bottom: 150px;
+  z-index: -1;
+}
+
+.container .stack3 {
+  bottom: 450px;
+  z-index: -2;
+}
+
+.container .stack4 {
+  bottom: 750px;
+  z-index: -3;
+}
+
+.container .stack5 {
+  bottom: 1050px;
+  z-index: -4;
+}
+
+.container .stack6 {
+  bottom: 1350px;
+  z-index: -5;
+}
+
+.container:hover .stack1, .container:hover .stack3, .container:hover .stack5 {
+  -webkit-transform: translate(-130px, 75px);
+          transform: translate(-130px, 75px);
+}
+
+.container:hover .stack2, .container:hover .stack4, .container:hover .stack6 {
+  -webkit-transform: translate(130px, 75px);
+          transform: translate(130px, 75px);
+}
+/*# sourceMappingURL=style.css.map */
